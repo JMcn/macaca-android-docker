@@ -21,7 +21,7 @@ RUN echo y | android update sdk --proxy-host mirrors.neusoft.edu.cn --proxy-port
 
 # armeabi-v7a x86_64
 
-RUN echo n | android create avd --force -n test -t android-22 --abi x86_64
+RUN echo n | android create avd --force -n test -t android-22 --abi default/x86_64
 
 RUN git clone https://github.com/creationix/nvm.git $HOME/.nvm
 
