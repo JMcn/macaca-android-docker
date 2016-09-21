@@ -17,7 +17,7 @@ RUN curl -o android-sdk.tgz http://dl.gmirror.org/android/android-sdk_r24.4.1-li
 
 # sys-img-armeabi-v7a-android-22 sys-img-x86_64-android-22
 
-RUN echo y | android update sdk --proxy-host mirrors.neusoft.edu.cn --proxy-port 80 -s --all --filter build-tools-22.0.1,android-22,sys-img-armeabi-v7a-android-22,platform-tool --no-ui --force
+RUN echo y | android update sdk --proxy-host mirrors.neusoft.edu.cn --proxy-port 80 -s --all --filter build-tools-22.0.1,android-22,sys-img-x86_64-android-22,platform-tool --no-ui --force
 
 # armeabi-v7a x86_64
 
