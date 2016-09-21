@@ -25,6 +25,9 @@ RUN echo n | android create avd --force -n test -t android-22 --abi default/x86_
 
 RUN git clone https://github.com/creationix/nvm.git $HOME/.nvm
 
+# Expose android port
+EXPOSE 5555
+
 WORKDIR /src
 COPY ./entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
